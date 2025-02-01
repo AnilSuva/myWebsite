@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        body {
+            background-color: #1B1D27;
+            color: white;
+        }
+
+        .title {
+            display: grid;
+            grid-template-columns: 100px auto 300px;
+        }
+
+        .left-title {
+            font-size: larger;
+            margin: 10px;
+        }
+
+        .right-title {
+            grid-column: 3/ 4;
+            font-size: larger;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 50%  50%;
+            justify-items: center;
+        }
+        img{
+            width: 100%;
+        }
+        .item{
+            width: 90%;
+        }
+        h1{
+            margin-left: 2.5%;
+        }
+        @media(max-width: 900px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            }
+            h1{
+                margin-left: 5%;
+            }
+            p{
+                font-size: 18px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="title">
+            <div class="left-title">
+                <a href="./index.html" style="color: white;">Home</a>
+            </div>
+            <div class="right-title">
+                <div><a>Skills</a></div>
+                <div><a href="./project.html" style="color: rgb(245, 183, 67);;">Project</a></div>
+                <div><a>Contect</a></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>My Project</h1>
+    </header>
+    <section class="container">
+        <div class="item">
+            <h2>1. Box it</h2>
+            <img src="./images/boxIt.png" alt="BoxIt-web-image" >
+            <p>Click on <a href="./boxIt/index.html" style="color: rgb(23, 243, 255);">Boxit</a></p>
+        </div>
+        <div class="item">
+            <h2>2. Linder</h2>
+            <img src="./images/Linder.png" alt="BoxIt-web-image" >
+            <p>Click on <a href="./Linder/index.html" style="color: rgb(23, 243, 255);">Linder</a></p>
+        </div>
+    </section>
+</body>
+
+</html>
